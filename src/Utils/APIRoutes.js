@@ -1,0 +1,10 @@
+export const host = process.env.REACT_APP_LOCAL_HOST;
+export const loginRoute = `${host}/users//login`;
+export const registerRoute = `${host}/users/register`;
+export const tokenValidation = `${host}/users/tokenIsValid`;
+export const getUser = `${host}/users/`;
+export const allUsersRoute = `${host}/users/allusers`;
+export const setAvatarRoute = `${host}/users/setavatar`;
+export const sendMessageRoute = `${host}/api/messages/addmsg`;
+export const recieveMessageRoute = `${host}/api/messages/getmsg`;
+export const avatarApi = `https://api.multiavatar.com`
