@@ -1,5 +1,5 @@
 export const host = process.env.REACT_APP_LOCAL_HOST;
-export const loginRoute = `${host}/users//login`;
+export const loginRoute = `${host}/users/login`;
 export const registerRoute = `${host}/users/register`;
 export const tokenValidation = `${host}/users/tokenIsValid`;
 export const getUser = `${host}/users/`;

@@ -8,6 +8,7 @@ import userContext from '../reactContext/userContext';
 import axios from 'axios';
 import Logo from "../../assets/logo-message.svg";
 import { toast, ToastContainer } from 'react-toastify';
+import { registerRoute } from '../../Utils/APIRoutes';
 // import { useState } from 'react';
 
 export default function Register () {
@@ -46,7 +47,7 @@ export default function Register () {
             try {
               const {email, password, passwordCheck, userName} = values;
               const newUser = {email, password, passwordCheck, userName};
-              const { data } = await axios.post("http://localhost:7000/users/register", newUser);
+              const { data } = await axios.post(registerRoute, newUser);
 
               if (!data.success) {
                 toast.error(data.msg, toastOptions);
